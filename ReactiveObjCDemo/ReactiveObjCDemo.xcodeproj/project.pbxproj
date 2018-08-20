@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		329A2D5F79DB21223DC9CC4E /* libPods-ReactiveObjCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9A9784D9C52B1C2D00E77F9 /* libPods-ReactiveObjCDemo.a */; };
 		5881E3EF212AFB7B00A86413 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5881E3EE212AFB7B00A86413 /* AppDelegate.m */; };
 		5881E3F2212AFB7B00A86413 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5881E3F1212AFB7B00A86413 /* ViewController.m */; };
 		5881E3F5212AFB7B00A86413 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5881E3F3212AFB7B00A86413 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14D58499BDE4D72DD893B85F /* Pods-ReactiveObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3A5170A292EF20A03044B46A /* Pods-ReactiveObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5881E3EA212AFB7B00A86413 /* ReactiveObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5881E3ED212AFB7B00A86413 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5881E3EE212AFB7B00A86413 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		5881E3F9212AFB7B00A86413 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5881E3FB212AFB7B00A86413 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5881E3FC212AFB7B00A86413 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9A9784D9C52B1C2D00E77F9 /* libPods-ReactiveObjCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactiveObjCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329A2D5F79DB21223DC9CC4E /* libPods-ReactiveObjCDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FFA20C9212FF397C5DA45D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9A9784D9C52B1C2D00E77F9 /* libPods-ReactiveObjCDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5881E3E1212AFB7A00A86413 = {
 			isa = PBXGroup;
 			children = (
 				5881E3EC212AFB7B00A86413 /* ReactiveObjCDemo */,
 				5881E3EB212AFB7B00A86413 /* Products */,
+				F0C6F941D7D74420868F3FBF /* Pods */,
+				1FFA20C9212FF397C5DA45D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = ReactiveObjCDemo;
 			sourceTree = "<group>";
 		};
+		F0C6F941D7D74420868F3FBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A5170A292EF20A03044B46A /* Pods-ReactiveObjCDemo.debug.xcconfig */,
+				14D58499BDE4D72DD893B85F /* Pods-ReactiveObjCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5881E400212AFB7B00A86413 /* Build configuration list for PBXNativeTarget "ReactiveObjCDemo" */;
 			buildPhases = (
+				A310CBE50B22096343DE96B9 /* [CP] Check Pods Manifest.lock */,
 				5881E3E6212AFB7A00A86413 /* Sources */,
 				5881E3E7212AFB7A00A86413 /* Frameworks */,
 				5881E3E8212AFB7A00A86413 /* Resources */,
+				148423F48EF5DBBD56F2EFA7 /* [CP] Embed Pods Frameworks */,
+				6FE0B3D3D40CF1CF6B9FE7AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		148423F48EF5DBBD56F2EFA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FE0B3D3D40CF1CF6B9FE7AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A310CBE50B22096343DE96B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveObjCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5881E3E6212AFB7A00A86413 /* Sources */ = {
@@ -281,6 +359,7 @@
 		};
 		5881E401212AFB7B00A86413 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A5170A292EF20A03044B46A /* Pods-ReactiveObjCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +377,7 @@
 		};
 		5881E402212AFB7B00A86413 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D58499BDE4D72DD893B85F /* Pods-ReactiveObjCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
