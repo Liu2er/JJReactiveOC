@@ -106,8 +106,6 @@
 				5881E3E6212AFB7A00A86413 /* Sources */,
 				5881E3E7212AFB7A00A86413 /* Frameworks */,
 				5881E3E8212AFB7A00A86413 /* Resources */,
-				148423F48EF5DBBD56F2EFA7 /* [CP] Embed Pods Frameworks */,
-				6FE0B3D3D40CF1CF6B9FE7AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,36 +162,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		148423F48EF5DBBD56F2EFA7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FE0B3D3D40CF1CF6B9FE7AD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveObjCDemo/Pods-ReactiveObjCDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A310CBE50B22096343DE96B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
